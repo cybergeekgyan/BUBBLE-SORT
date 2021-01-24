@@ -13,3 +13,32 @@ Hence, the time complexity is of the order n2 or O(n2).
 
 # Space Complexity of Bubble sort
 The space complexity for the algorithm is O(1), because only a single additional memory space is required i.e. for temporary variable used for swapping.
+
+# Pseudocode of Bubble Sort Algorithm
+
+bubbleSort( Arr[], totat_elements)
+   
+   for i = 0 to total_elements - 1 do:
+      swapped = false
+		
+      for j = 0 to total_elements - i - 2 do:
+      
+         /* compare the adjacent elements */   
+         if Arr[j] > Arr[j+1] then
+            /* swap them */
+            swap(Arr[j], Arr[j+1])		 
+            swapped = true
+         end if
+         
+      end for
+      
+      /*if no number was swapped that means 
+      array is sorted now, break the loop.*/
+      
+      if(not swapped) then
+         break
+      end if
+      
+   end for
+   
+end
