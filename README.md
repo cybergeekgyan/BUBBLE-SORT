@@ -16,12 +16,11 @@ The space complexity for the algorithm is O(1), because only a single additional
 
 # Pseudocode of Bubble Sort Algorithm
 
-bubbleSort( Arr[], totat_elements)
+    bubbleSort( Arr[], totat_elements)
    
-   for i = 0 to total_elements - 1 do:
-      swapped = false
-		
-      for j = 0 to total_elements - i - 2 do:
+     for i = 0 to total_elements - 1 do:
+      swapped = false	
+          for j = 0 to total_elements - i - 2 do:
       
          /* compare the adjacent elements */   
          if Arr[j] > Arr[j+1] then
@@ -39,6 +38,6 @@ bubbleSort( Arr[], totat_elements)
          break
       end if
       
-   end for
+    end for
    
-end
+    end
